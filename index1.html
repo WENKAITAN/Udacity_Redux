@@ -302,10 +302,9 @@
     <script type="text/babel">
 
       const List = (props) => {
-        console.log(props.items)
         return (
           <ul>
-              {props.items.map(item => (
+              {props.items && props.items.map(item => (
                 <li id={item.id}>
                 <span>
                    {item.name}
